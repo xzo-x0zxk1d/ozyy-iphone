@@ -1,0 +1,29 @@
+// !$*UTF8*$!
+{archiveVersion=1; classes={}; objectVersion=56; objects={
+000000000000000000000001 = {isa=PBXProject; attributes={LastUpgradeCheck=1600;}; buildConfigurationList=000000000000000000000028; compatibilityVersion="Xcode 14.0"; developmentRegion=en; hasScannedForEncodings=0; knownRegions=(en,Base); mainGroup=000000000000000000000002; productRefGroup=000000000000000000000004; projectDirPath=""; projectRoot=""; targets=(000000000000000000000005,);};
+000000000000000000000002 = {isa=PBXGroup; children=(000000000000000000000003,000000000000000000000004,); sourceTree="<group>";};
+000000000000000000000003 = {isa=PBXGroup; path=Ozyy; children=(00000000000000000000000A,00000000000000000000000B,00000000000000000000000C,00000000000000000000000D,00000000000000000000000E,00000000000000000000000F,); sourceTree="<group>";};
+000000000000000000000004 = {isa=PBXGroup; name=Products; children=(000000000000000000000006,); sourceTree="<group>";};
+000000000000000000000005 = {isa=PBXNativeTarget; buildConfigurationList=000000000000000000000029; buildPhases=(00000000000000000000001E,00000000000000000000001F,000000000000000000000020,); buildRules=(); dependencies=(); name=Ozyy; productName=Ozyy; productReference=000000000000000000000006; productType="com.apple.product-type.application";};
+000000000000000000000006 = {isa=PBXFileReference; explicitFileType=wrapper.application; includeInIndex=0; path=Ozyy.app; sourceTree=BUILT_PRODUCTS_DIR;};
+00000000000000000000000A = {isa=PBXFileReference; lastKnownFileType=sourcecode.swift; path=AppDelegate.swift; sourceTree="<group>";};
+00000000000000000000000B = {isa=PBXFileReference; lastKnownFileType=sourcecode.swift; path=WorkspaceController.swift; sourceTree="<group>";};
+00000000000000000000000C = {isa=PBXFileReference; lastKnownFileType=sourcecode.swift; path=NativeAuth.swift; sourceTree="<group>";};
+00000000000000000000000D = {isa=PBXFileReference; lastKnownFileType=folder.assetcatalog; path=Assets.xcassets; sourceTree="<group>";};
+00000000000000000000000E = {isa=PBXFileReference; lastKnownFileType=text.plist.xml; path=Info.plist; sourceTree="<group>";};
+00000000000000000000000F = {isa=PBXFileReference; lastKnownFileType=text.xml; path=PrivacyInfo.xcprivacy; sourceTree="<group>";};
+000000000000000000000014 = {isa=PBXBuildFile; fileRef=00000000000000000000000A;};
+000000000000000000000015 = {isa=PBXBuildFile; fileRef=00000000000000000000000B;};
+000000000000000000000016 = {isa=PBXBuildFile; fileRef=00000000000000000000000C;};
+000000000000000000000017 = {isa=PBXBuildFile; fileRef=00000000000000000000000D;};
+000000000000000000000019 = {isa=PBXBuildFile; fileRef=00000000000000000000000F;};
+00000000000000000000001E = {isa=PBXSourcesBuildPhase; buildActionMask=2147483647; files=(000000000000000000000014,000000000000000000000015,000000000000000000000016,); runOnlyForDeploymentPostprocessing=0;};
+00000000000000000000001F = {isa=PBXFrameworksBuildPhase; buildActionMask=2147483647; files=(); runOnlyForDeploymentPostprocessing=0;};
+000000000000000000000020 = {isa=PBXResourcesBuildPhase; buildActionMask=2147483647; files=(000000000000000000000017,000000000000000000000019,); runOnlyForDeploymentPostprocessing=0;};
+000000000000000000000028 = {isa=XCConfigurationList; buildConfigurations=(000000000000000000000032,000000000000000000000033,); defaultConfigurationIsVisible=0; defaultConfigurationName=Release;};
+000000000000000000000029 = {isa=XCConfigurationList; buildConfigurations=(000000000000000000000034,000000000000000000000035,); defaultConfigurationIsVisible=0; defaultConfigurationName=Release;};
+000000000000000000000032 = {isa=XCBuildConfiguration; name=Debug; buildSettings={CLANG_ENABLE_MODULES=YES; SDKROOT=iphoneos; IPHONEOS_DEPLOYMENT_TARGET=17.0; SWIFT_VERSION=5.0; SWIFT_STRICT_CONCURRENCY=minimal;};};
+000000000000000000000033 = {isa=XCBuildConfiguration; name=Release; buildSettings={CLANG_ENABLE_MODULES=YES; SDKROOT=iphoneos; IPHONEOS_DEPLOYMENT_TARGET=17.0; SWIFT_VERSION=5.0; SWIFT_STRICT_CONCURRENCY=minimal;};};
+000000000000000000000034 = {isa=XCBuildConfiguration; name=Debug; buildSettings={ASSETCATALOG_COMPILER_APPICON_NAME=AppIcon; CODE_SIGN_STYLE=Automatic; CURRENT_PROJECT_VERSION=1; GENERATE_INFOPLIST_FILE=NO; INFOPLIST_FILE=Ozyy/Info.plist; IPHONEOS_DEPLOYMENT_TARGET=17.0; LD_RUNPATH_SEARCH_PATHS="$(inherited) @executable_path/Frameworks"; MARKETING_VERSION=1.0.0; PRODUCT_BUNDLE_IDENTIFIER=xyz.ozyy.mobile; PRODUCT_NAME="$(TARGET_NAME)"; SWIFT_EMIT_LOC_STRINGS=YES; SWIFT_VERSION=5.0; TARGETED_DEVICE_FAMILY="1,2"; SWIFT_OPTIMIZATION_LEVEL="-Onone";};};
+000000000000000000000035 = {isa=XCBuildConfiguration; name=Release; buildSettings={ASSETCATALOG_COMPILER_APPICON_NAME=AppIcon; CODE_SIGN_STYLE=Automatic; CURRENT_PROJECT_VERSION=1; GENERATE_INFOPLIST_FILE=NO; INFOPLIST_FILE=Ozyy/Info.plist; IPHONEOS_DEPLOYMENT_TARGET=17.0; LD_RUNPATH_SEARCH_PATHS="$(inherited) @executable_path/Frameworks"; MARKETING_VERSION=1.0.0; PRODUCT_BUNDLE_IDENTIFIER=xyz.ozyy.mobile; PRODUCT_NAME="$(TARGET_NAME)"; SWIFT_EMIT_LOC_STRINGS=YES; SWIFT_VERSION=5.0; TARGETED_DEVICE_FAMILY="1,2"; SWIFT_OPTIMIZATION_LEVEL="-O";};};
+}; rootObject=000000000000000000000001;}

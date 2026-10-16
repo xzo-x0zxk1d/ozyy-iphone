@@ -1,0 +1,11 @@
+build/
+.DS_Store
+xcuserdata/
+*.ipa
+*.xcarchive
+*.p12
+*.pfx
+*.mobileprovision
+*.pem
+*.key
+.env*

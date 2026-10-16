@@ -1,0 +1,31 @@
+name: Build Ozyy for personal iPhone installation
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ozyy-iphone-build
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: macos-15
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Compile the iPhone app without signing credentials
+        run: node scripts/build.mjs --unsigned
+      - name: Check the actual compiled app package
+        run: python3 scripts/verify-unsigned.py build/sideload/Ozyy-unsigned.ipa
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: Ozyy-iPhone-personal-install
+          path: build/sideload/
+          if-no-files-found: error
+          retention-days: 1
+          compression-level: 0
